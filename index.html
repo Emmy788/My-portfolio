@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emerald's Portfolio</title>
+    <!-- css start -->
+    <style>
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        body {
+            color: #fff;
+            background-color: rgb(12, 12, 12);
+            font-family: 'Poppins';
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        #header nav{
+            display: flex;
+            align-items: center;
+        }
+
+        nav a{
+            text-decoration: none;
+            color:#fff;
+            margin: 10px;
+            transition: 0.15s;
+            font-size: 18px;
+        }
+
+        nav a:hover{
+            color: aqua;
+        }
+
+        section {
+            color: rgb(173, 169, 169);
+        }
+
+        #home{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left img{
+            width: 250px;
+            border-radius: 60px;
+            margin-right: 100px;
+            margin-left: 50px;
+        }
+
+        .right h1{
+            font-size: 50px;
+        }
+
+        .right p{
+            font-size: 18px;
+        }
+
+        .right button{
+            padding: 15px;
+            margin-left: 60px;
+            font-size: 14px;
+            background-color: rgb(215, 201, 201);
+            border: none;
+            border-radius: 3px;
+            transition: 0.15s;
+        }
+
+        .right button:hover{
+            color: #fff;
+            background-color: aqua;
+        }
+
+        footer{
+            background-color: #bbb;
+            margin-top: 30px;
+            padding: 20px;
+        }
+
+        footer img{
+            width: 150px;
+        }
+        .copyright{
+            align-items: center;
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!---------- Header -------->
+    <div id="header">
+            <img src="logo icons/Logo-1.jpeg" alt="header-logo" width="150">
+            <nav>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#work">Work</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#contact">Contact</a>
+            </nav>
+    </div>
+
+    <!----------- Home section ---------->
+    <section id="home">
+        <div class="left">
+            <img src="images/IMG_20231231_203023_529.jpg" alt="">
+        </div>
+        <div class="right">
+            <h1> Web Developer</h1>
+            <p>Hello there, I am <span style="color: rgb(36, 224, 224); font-size: 20px;">Emerald</span> from Kenya. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam soluta hic minus reiciendis, officia itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iste!</p>
+            <button>Download CV</button>
+        </div>
+    </section>
+
+     <!--------- About section --------->
+     <section id="about">
+        <h1>About Me</h1>
+     </section>
+
+     <!--------- Work section --------->
+     <section id="work">
+        <h1>My Work</h1>
+
+     </section>
+
+     <!--------- Resume section -------->
+     <section id="resume">
+        <h1>Resume</h1>
+     </section>
+
+     <!--------- Contact section --------->
+     <section id="contact">
+        <h1>Contact</h1>
+        <form>
+            <label for="">Fill in:</label><br>
+            <input type="text" placeholder="Name..."><br>
+            <input type="email" placeholder="Email..."><br>
+            <button>Submit</button>
+        </form>
+
+     </section>
+
+      <!--------- Footer section --------->
+      <footer>
+        <div class="footer-main">
+            <div class="one">
+                <img src="logo icons/Logo-1.jpeg" alt="footer-logo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, suscipit.</p>
+            </div>
+            <div class="copyright">
+                <p>Copyright&copy;2024 Emerald Mwaniga</p>
+            </div>
+        </div>
+
+
+      </footer>
+</body>
+</html>
