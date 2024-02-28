@@ -4,97 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald's Portfolio</title>
-    <!-- css start -->
-    <style>
-        #header{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 40px;
-        }
-
-        body {
-            color: #fff;
-            background-color: rgb(12, 12, 12);
-            font-family: 'Poppins';
-            margin-left: 5%;
-            margin-right: 5%;
-        }
-
-        #header nav{
-            display: flex;
-            align-items: center;
-        }
-
-        nav a{
-            text-decoration: none;
-            color:#fff;
-            margin: 10px;
-            transition: 0.15s;
-            font-size: 18px;
-        }
-
-        nav a:hover{
-            color: aqua;
-        }
-
-        section {
-            color: rgb(173, 169, 169);
-        }
-
-        #home{
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .left img{
-            width: 250px;
-            border-radius: 60px;
-            margin-right: 100px;
-            margin-left: 50px;
-        }
-
-        .right h1{
-            font-size: 50px;
-        }
-
-        .right p{
-            font-size: 18px;
-        }
-
-        .right button{
-            padding: 15px;
-            margin-left: 60px;
-            font-size: 14px;
-            background-color: rgb(215, 201, 201);
-            border: none;
-            border-radius: 3px;
-            transition: 0.15s;
-        }
-
-        .right button:hover{
-            color: #fff;
-            background-color: aqua;
-        }
-
-        footer{
-            background-color: #bbb;
-            margin-top: 30px;
-            padding: 20px;
-        }
-
-        footer img{
-            width: 150px;
-        }
-        .copyright{
-            align-items: center;
-            font-size: 15px;
-            text-align: center;
-            font-weight: bold;
-        }
-
-
-    </style>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!---------- Header -------->
@@ -112,7 +27,7 @@
     <!----------- Home section ---------->
     <section id="home">
         <div class="left">
-            <img src="images/IMG_20231231_203023_529.jpg" alt="">
+            <img src="images/IMG_20231231_203023_529.jpg" alt="Home-photo">
         </div>
         <div class="right">
             <h1> Web Developer</h1>
@@ -124,6 +39,11 @@
      <!--------- About section --------->
      <section id="about">
         <h1>About Me</h1>
+        <div class="container">
+            <img src="images/IMG20230601165432.jpg" alt="about-photo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis labore laboriosam quis iste quo optio molestias quia! Quasi, modi!</p>
+        </div>
+        
      </section>
 
      <!--------- Work section --------->
