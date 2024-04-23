@@ -3,28 +3,50 @@
     padding: 0%;
     margin: 0%;
     font-family: 'Poppins', sans-serif;
+    box-shadow: none;
+    text-decoration: none;
 }
 body {
     color: #fff;
     background-color: rgb(12, 12, 12);
     margin-left: 5%;
     margin-right: 5%;
+    overflow-x: none;
 }
 h1{
     color: aqua;
     font-size: 40px;
 }
+a{
+    text-decoration: none;
+}
+main{
+    margin-top: 100px;
+}
 
 /* Header section */
 #header{
+    top: 0;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    flex-wrap: wrap;
+    position: fixed;
 }
+
 #header nav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+#header img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
 }
 nav a{
     text-decoration: none;
@@ -32,6 +54,7 @@ nav a{
     margin: 10px;
     transition: 0.15s;
     font-size: 18px;
+    margin-right: 50px;
 }
 nav a:hover{
     color: aqua;
@@ -58,45 +81,146 @@ section {
     font-size: 18px;
 }
 .right button{
-    padding: 15px;
-    margin-left: 60px;
-    font-size: 14px;
-    background-color: rgb(215, 201, 201);
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 15px;
     border: none;
-    border-radius: 3px;
-    transition: 0.15s;
+    border-radius: 5px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
 }
 .right button:hover{
-    color: #fff;
-    background-color: aqua;
+    background: aqua;
 }
-
 /* About section */
 #about{
     padding: 80px 0px;
 }
-.container{
+.about-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    flex-wrap: wrap;
+}
+.row{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.container img{
+.about-img{
+    flex-basis: 40%;
+}
+#about img{
     width: 250px;
-    border-radius: 60px;
+    border-radius: 20px;
     margin-right: 100px;
     margin-left: 50px;
 }
+.about-info{
+    flex-basis: 55%;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background: aqua;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: aqua;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+
+
 /* My Work section */
 
 /* Resume section */
+#resume{
+    margin-bottom: 50px;
+}
+.resume-buttons{
+    margin-top: 30px;
+}
+.resume-button{
+    display: inline-block;
+    padding: 15px 20px;
+    background-color:  rgb(215, 201, 201);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.15s;
+}
+.resume-button:hover {
+    color: #fff;
+    background-color: aqua;
+  }
+  
+.cv-button {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color:  rgb(215, 201, 201);
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 50px;
+  }
+  .cv-button:hover {
+    color: #fff;
+    background-color: aqua;
+  }
+  
+
 
 /* Contact section */
+.icons{
+    font-size: 23px;
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    row-gap: 10px;
+    grid-template-rows: row;
+}
+i:hover{
+    color: aqua;
+}
 
 /* Footer section */
 footer{
     background-color: #bbb;
     margin-top: 30px;
     padding: 20px;
+    margin-left: 0;
+    color: black;
 }
 footer img{
     width: 150px;

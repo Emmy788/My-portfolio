@@ -10,20 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!---------- Header -------->
     <div id="header">
-            <img src="logo icons/Logo-1.jpeg" alt="header-logo" width="150">
+        <div class="header-logo">
+            <img src="logo icons/Logo-1.jpeg" alt="header-logo">
+        </div>
             <nav>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#work">Work</a>
                     <a href="#resume">Resume</a>
-                    <a href="#contact">Contact</a>
-            </nav>
+                    <a href="#contact">Contact</a>    
+            </nav>  
     </div>
-
+<main>
     <!----------- Home section ---------->
     <section id="home">
         <div class="left">
@@ -31,35 +35,81 @@
         </div>
         <div class="right">
             <h1> Web Developer</h1>
-            <p>Hello there, I am <span style="color: rgb(36, 224, 224); font-size: 20px;">Emerald</span> from Kenya. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam soluta hic minus reiciendis, officia itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, iste!</p>
-            <button>Download CV</button>
+            <p>Hello there, I am <span style="color: rgb(36, 224, 224); font-size: 20px;">Emerald</span> from Kenya, a passionate web developer with a flair for creativity and a dedication to crafting seamless online experiences. With a background in Web Development, I bring 3 years of experience to every project I undertake. Let's build something amazing together!</p>
+            <button>Contact Me!</button>
         </div>
     </section>
 
      <!--------- About section --------->
      <section id="about">
         <h1>About Me</h1>
-        <div class="container">
-            <img src="images/IMG20230601165432.jpg" alt="about-photo">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam officiis labore laboriosam quis iste quo optio molestias quia! Quasi, modi!</p>
+        <div class="about-row">
+            <div class="about-info">
+                <p>I discovered my love for coding during my time at Kirinyaga University. Since then, I've immersed myself in the world of web development, constantly learning and expanding my skill set. I thrive on challenges and enjoy finding innovative solutions to complex problems. Outside of coding.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Development</span><br>Lorem ipsum dolor sit amet..</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Management</span><br>Lorem ipsum dolor sit amet..</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Front-End Development</span><br>Lorem ipsum dolor sit amet..</li>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>App Management</span><br>Lorem ipsum dolor sit amet..</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-Current</span><br>Software Engineering at Kirinyaga University</li>
+                        <li><span>2024</span><br>Web Development at GomyCode.KE</li>
+                        <li><span>xxxx</span><br>Lorem ipsum dolor sit amet..</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="images/IMG20230601165432.jpg" alt="about-img">
+            </div>
+                
         </div>
-        
      </section>
 
      <!--------- Work section --------->
      <section id="work">
         <h1>My Work</h1>
+        <p>Here I'm showcasing my various projects that I've taken part in during this journey. I hope you enjoy the ride!</p>
 
      </section>
 
      <!--------- Resume section -------->
      <section id="resume">
         <h1>Resume</h1>
+        <p>At this point I have my Curriculum VItae and my Resume which show my Education History, Skills acquired and Experiences.You are able to download my CV and Resume by clicking the buttons below.</p>
+        <div class="resume-buttons">
+            <a href="https://docs.google.com/document/d/161bsvqGJj09Y4Qygo8KPH03K4cFiGWP3/edit?usp=drive_link&ouid=114996643009828025485&rtpof=true&sd=true" class="cv-button">Download CV</a>
+            <a href="" class="resume-button">Download Resume</a>
+        </div>
+        
      </section>
 
      <!--------- Contact section --------->
      <section id="contact">
         <h1>Contact</h1>
+        <p>Thanks so much for visiting My website. If you would like a Collaboration or to hire me, be sure to contact me through my details below:</p>
+         <div class="icons">
+            <i class='bx bx-envelope'></i>
+            <i class='bx bxl-github'></i>
+            <i class='bx bxl-linkedin'></i>
+            <i class='bx bxs-phone'></i>
+         </div>
+        
         <form>
             <label for="">Fill in:</label><br>
             <input type="text" placeholder="Name..."><br>
@@ -69,19 +119,36 @@
 
      </section>
 
+</main>
+    
+
       <!--------- Footer section --------->
       <footer>
         <div class="footer-main">
             <div class="one">
                 <img src="logo icons/Logo-1.jpeg" alt="footer-logo">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, suscipit.</p>
             </div>
             <div class="copyright">
                 <p>Copyright&copy;2024 Emerald Mwaniga</p>
             </div>
         </div>
 
-
       </footer>
+      <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+      </script>
 </body>
 </html>
