@@ -61,12 +61,14 @@ nav a:hover{
 }
 section {
     color: rgb(173, 169, 169);
+    height: 100vh;
 }
 
 /* Home section */
 #home{
     display: flex;
     justify-content: space-between;
+    height: 100vh;
 }
 .left img{
     width: 250px;
